@@ -42,7 +42,8 @@ $contentListShadow: 0 0 0.05em 0.05em $colorShadow;
 
 // Fonts
 $fontDefault: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-$fontHeader: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+// $fontHeader: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$fontHeader: 'Catamaran', sans-serif;
 
 //Mixins
 @mixin mixinHeader {

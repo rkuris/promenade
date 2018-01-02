@@ -11,7 +11,7 @@
     <meta name="description" content="{{meta_description}}" />
 
     {{! Styles }}
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:500,700|Merriweather:300i,400,400i,700,700i" />
     <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -44,20 +44,15 @@
             <h2 class="sidebar_link"><a href="/about">About</a></h2>
             <h2 class="sidebar_link"><a href="/projects">Projects</a></h2>
         </div>
+    <script>
+    window.onload = function() {
+        Commento.init({
+        serverUrl: "//svjaneo.com/commento",
+        });
+    }
+    </script>
     </header>
     {{{body}}}
     {{ghost_foot}}
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = ''; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
 </body>
 </html>
