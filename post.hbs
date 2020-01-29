@@ -4,7 +4,7 @@
         {{#post}}
         {{#if tags}}<span class="contentpost_meta">{{tags separator=" · "}}</span>{{/if}}
         <h1 class="contentpost_headline post-title" itemprop="url" data-pjax title="{{{title}}}">{{{title}}}</h1>
-        <section class="contentpost_articlecontent post-content">
+        <section class="contentpost_articlecontent post-content" id="post">
             {{content}}
         </section>
         <footer class="contentpost_footer post-footer">
@@ -25,4 +25,11 @@
 	<script src="/commento/assets/js/commento.js"></script>
 	<noscript>Please enable JavaScript to view the <a href="https://github.com/adtac/commento">comments powered by commento</a></noscript>
     </article>
+    <!-- The Modal popup for making images bigger -->
+  <div id="myModal" class="modal">
+    <span id="closeSpan" class="modalClose">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 </main>
+<script src="/assets/clickableImages.js"></script>
