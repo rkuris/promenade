@@ -1,6 +1,6 @@
 {{!< default}}
-<main class="content contentpost {{#foreach tags}}{{#if @first}}{{encode name}}{{/if}}{{/foreach}}" role="main">
-    <article class="contentpost_inner {{post_class}}" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+<main class="content contentpost {{#foreach tags}}{{#if @first}}{{encode name}}{{/if}}{{/foreach}}">
+    <article class="contentpost_inner {{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
         {{#post}}
         {{#if tags}}<span class="contentpost_meta">{{tags separator=" · "}}</span>{{/if}}
         <h1 class="contentpost_headline post-title" itemprop="url" data-pjax title="{{{title}}}">{{{title}}}</h1>
